@@ -1,18 +1,18 @@
 {
   "manifest_version": 3,
   "name": "YouTube Ad Annihilator",
-  "version": "1.0",
-  "description": "Instantly skips YouTube ads.",
+  "version": "1.1",
+  "description": "Instantly skips YouTube ads natively and automatically.",
   "permissions": [],
   "content_scripts": [
     {
       "matches": [
-  "*://*.youtube.com/*",
-  "*://m.youtube.com/*"
-],
-     "js": ["content.js"],
+        "*://*.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "js": ["content.js"],
       "css": ["styles.css"],
-      "run_at": "document_idle"
+      "run_at": "document_start"
     }
   ]
 }
